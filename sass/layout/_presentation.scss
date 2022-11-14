@@ -1,0 +1,11 @@
+.presentation {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f6f6f6;
+    & h2 {
+        font-size: 2rem;
+    }
+    & p {
+        font-size: 1.5rem;
+    }
+}

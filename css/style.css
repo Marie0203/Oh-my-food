@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  text-align: center;
+  box-shadow: 0 0 0.5rem #c0c0c0;
+  padding: 1.5rem;
+  margin: 0;
+  position: relative;
+}
+
+.location {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.presentation {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f6f6f6;
+}
+.presentation h2 {
+  font-size: 2rem;
+}
+.presentation p {
+  font-size: 1.5rem;
+}
+
+.presentation button {
+  color: white;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #eaeaea;
+}
+
+.fonctionnement {
+  padding: 1rem 1.5rem;
+  counter-reset: tuto;
+}
+.fonctionnement ol {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .fonctionnement ol {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
+}
+.fonctionnement li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 2rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #eaeaea;
+}
+.fonctionnement li::before {
+  content: counter(tuto);
+  counter-increment: tuto;
+  background-color: #9356dc;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -0.9rem;
+  position: absolute;
+  bottom: 1.5rem;
+}
+.fonctionnement i {
+  padding-right: 1rem;
+  color: darkgrey;
+  font-size: 1.5rem;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 2rem 1.5rem;
+}
+.restaurants .info_card {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+.restaurants .info_card h3, .restaurants .info_card p {
+  margin: 0.3rem 0rem;
+}
+.restaurants .info_card i {
+  margin-right: 10px;
+  bottom: 50px;
+  position: absolute;
+  right: 0.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.restaurants .restaurants_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  row-gap: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .restaurants .restaurants_cards {
+    flex-direction: column;
+  }
+}
+.restaurants .restaurants_cards .restaurant_img {
+  height: 14rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem 1.5rem 0 0;
+  background-color: white;
+}
+.restaurants .restaurants_cards .card {
+  background-color: white;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  border-radius: 1.5rem;
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .restaurants .restaurants_cards .card {
+    width: 100%;
+  }
+}
+.restaurants .restaurants_cards .new_marker {
+  background-color: #99e2d0;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: #1b6150;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer h3 {
+  color: white;
+  padding: 1.5rem 2.5rem;
+  font-family: "Shrikhand", "cursive";
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+}
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+}
+.footer li {
+  padding: 0.3rem 0;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer .fa-solid {
+  padding-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

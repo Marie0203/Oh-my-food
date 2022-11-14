@@ -1,0 +1,14 @@
+@import "../utils/box-shadow";
+@import "../utils/variables";
+
+.presentation button {
+    color: white;
+    padding: 1rem 2rem;
+    background-image: linear-gradient($color-secondary,$color-primary);
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    @include box-shadow;
+}
