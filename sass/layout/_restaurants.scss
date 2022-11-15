@@ -7,21 +7,18 @@
         flex-direction :column;
         & h3, p {
             margin: 0.3rem 0rem;
+            font-size: 1rem;
         }
         & i {
             margin-right: 10px;
-            bottom: 50px;
+            bottom: 40px;
             position: absolute;
             right: 0.5rem;
-            font-weight: 400;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            
+            font-size: 2rem;
         }
     }
     
-
     .restaurants_cards {
         display: flex;
         justify-content: space-between;
@@ -30,7 +27,7 @@
         @media screen and (max-width: 1000px) {
             flex-direction: column;
         }
-
+        
         & .restaurant_img {
             height: 14rem;
             width: 100%;
@@ -45,17 +42,19 @@
             position: relative;
             border-radius: 1.5rem;
             width: 50%;
+            @include box-shadow;
             @media screen and (max-width: 1000px) {
                 width: 100%;
             }
         }
         & .new_marker {
             background-color: ($color-tertiary);
-            padding: 0.5rem;
+            padding: 0.5rem 1rem;
             position: absolute;
             top: 0.5rem;
             right: 1rem;
-            color: #1b6150;
+            color: #3b8468;
+            font-size: 1rem;
         }
     }
 
