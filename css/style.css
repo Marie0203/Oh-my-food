@@ -44,7 +44,7 @@ body {
   font-weight: 300;
 }
 
-.presentation button {
+button {
   color: white;
   padding: 1rem 2rem;
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -52,7 +52,14 @@ body {
   border-radius: 2rem;
   font-size: 1.3rem;
   margin-top: 1rem;
-  box-shadow: 1px 12px 14px 0px #e3e3e3;
+  cursor: pointer;
+  transition: transform 200ms;
+  box-shadow: 3px 6px 2px lightgrey;
+}
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+  box-shadow: 5px 10px 5px lightgrey;
 }
 
 .fonctionnement {
@@ -62,6 +69,7 @@ body {
 .fonctionnement ol {
   display: flex;
   gap: 2rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
   .fonctionnement ol {
@@ -197,7 +205,7 @@ body {
   object-fit: cover;
 }
 
-h2 {
+.restaurant_title {
   font-family: "shrikhand", "sans-serif";
 }
 
