@@ -1,0 +1,10 @@
+@mixin box-shadow {
+    box-shadow: 1px 12px 14px 0px #e3e3e3;
+}
+
+@mixin heart {
+    display: flex;
+    position: absolute;
+    right: 1.5rem;
+    font-size: 2rem;
+}

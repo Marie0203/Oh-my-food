@@ -1,9 +1,28 @@
+@import "../utils/mixins";
+
 .resto_1 {
     width: 100%;
-    height: 20rem;
+    height: 22rem;
     object-fit: cover;
 }
 
-.restaurant_title {
-    font-family: "shrikhand", "sans-serif";
+.menu_header {
+    display: flex;
+    align-items : center;
+    margin-top: -2rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: white;
+    position: relative;
+    & h2 {
+        font-family: "shrikhand", "cursive";
+        padding: 1rem 1rem;
+    }
+
+    & i {
+        @include heart;
+    }
+      
 }
+    
+
+
