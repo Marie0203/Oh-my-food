@@ -11,17 +11,53 @@
     align-items : center;
     margin-top: -2rem;
     border-radius: 2rem 2rem 0 0;
-    background-color: white;
+    background-color: #f6f6f6;
     position: relative;
     & h2 {
         font-family: "shrikhand", "cursive";
         padding: 1rem 1rem;
+        font-size: 2rem;
     }
-
+    
     & i {
         @include heart;
     }
-      
+
+}
+
+.menus {
+    background-color: #f6f6f6;
+}
+
+
+.menu-category {
+    padding: 0rem 1rem;
+    & h3, p {
+        margin: 0;
+    }
+    & p {
+        font-weight: 300;
+    }
+    & h2 {
+        font-weight: 300;
+        
+    }
+
+}
+.menu-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    @include box-shadow;
+    & .price {
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+        font-weight: 600;
+    }
+
 }
     
 

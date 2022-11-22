@@ -208,18 +208,51 @@ button:hover {
   align-items: center;
   margin-top: -2rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: white;
+  background-color: #f6f6f6;
   position: relative;
 }
 .menu_header h2 {
   font-family: "shrikhand", "cursive";
   padding: 1rem 1rem;
+  font-size: 2rem;
 }
 .menu_header i {
   display: flex;
   position: absolute;
   right: 1.5rem;
   font-size: 2rem;
+}
+
+.menus {
+  background-color: #f6f6f6;
+}
+
+.menu-category {
+  padding: 0rem 1rem;
+}
+.menu-category h3, .menu-category p {
+  margin: 0;
+}
+.menu-category p {
+  font-weight: 300;
+}
+.menu-category h2 {
+  font-weight: 300;
+}
+
+.menu-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  box-shadow: 1px 12px 14px 0px #e3e3e3;
+}
+.menu-card .price {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
