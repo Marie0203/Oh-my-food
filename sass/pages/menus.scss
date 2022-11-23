@@ -37,6 +37,8 @@
     padding: 1rem 1rem;
     & h3, p {
         margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     & p {
         font-weight: 300;
@@ -46,7 +48,7 @@
         font-size: 1.2rem;
         
     }
-
+    
 }
 .menu-card {
     background-color: white;
@@ -61,7 +63,14 @@
         margin-left: auto;
         font-weight: 600;
     }
+    
+}
 
+.menu-card_description {
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    flex-direction: column;
 }
 
 .command {

@@ -3,8 +3,14 @@
 }
 
 @mixin heart {
-    display: flex;
+
     position: absolute;
     right: 1.5rem;
     font-size: 2rem;
+    &:hover {
+        transition: all 200ms ease-in-out;
+        background-image: linear-gradient($color-primary, $color-secondary);
+        opacity: 1;
+        transform: scale (1.2);
+   }
 }

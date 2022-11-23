@@ -219,10 +219,15 @@ button:hover {
   font-weight: 400;
 }
 .menu_header i {
-  display: flex;
   position: absolute;
   right: 1.5rem;
   font-size: 2rem;
+}
+.menu_header i:hover {
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  opacity: 1;
+  transform: scale 1.2;
 }
 
 .menus {
@@ -235,6 +240,8 @@ button:hover {
 }
 .menu_category h3, .menu_category p {
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_category p {
   font-weight: 300;
@@ -257,6 +264,13 @@ button:hover {
   align-items: flex-end;
   margin-left: auto;
   font-weight: 600;
+}
+
+.menu-card_description {
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  flex-direction: column;
 }
 
 .command {
