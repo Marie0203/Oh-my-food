@@ -17,3 +17,23 @@ button {
         box-shadow: 5px 10px 5px lightgrey;
     }
 }
+
+.btn-heart {
+    display: flex;
+    position: absolute;
+    font-size: 2rem;
+    right: 1.5rem;
+    .fas {
+        position: absolute;
+        color: transparent;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 200ms ease-in-out;
+    }
+    &:hover .fas {
+        opacity: 1;
+    }
+    
+}

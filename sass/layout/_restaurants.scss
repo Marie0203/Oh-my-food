@@ -1,22 +1,20 @@
 .restaurants {
     background-color: #f6f6f6;
     padding: 2rem 1.5rem;
-    & .info_card {
+    .info_card {
         display: flex;
         padding: 1rem;
         flex-direction :column;
-        & h3, p {
+        h3, p {
             margin: 0.3rem 0rem;
             font-size: 1rem;
         }
-        & i {
-            display: flex;
-            position: absolute;
-            right: 1.5rem;
-            font-size: 2rem;
-        }
-    }
-    
+        
+        
+}
+}
+
+
     .restaurants_cards {
         display: flex;
         justify-content: space-between;
@@ -26,14 +24,14 @@
             flex-direction: column;
         }
         
-        & .restaurant_img {
+        .restaurant_img {
             height: 14rem;
             width: 100%;
             object-fit: cover;
             border-radius: 1.5rem 1.5rem 0 0;
             background-color: white;
         }
-        & .card {
+        .card {
             background-color: white;
             text-decoration: none;
             color: inherit;
@@ -45,7 +43,7 @@
                 width: 100%;
             }
         }
-        & .new_marker {
+        .new_marker {
             background-color: ($color-tertiary);
             padding: 0.5rem 1rem;
             position: absolute;
@@ -56,5 +54,5 @@
         }
     }
 
-}
+
 
