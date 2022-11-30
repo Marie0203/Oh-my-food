@@ -1,3 +1,4 @@
+@import "../utils/variables";
 .presentation {
     text-align: center;
     padding: 3rem;
@@ -11,3 +12,28 @@
         font-weight: 300;
     }
 }
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    animation: disappear 300ms 3s forwards;
+    &::after {
+        content:"";
+        height: 200px;
+        width: 200px;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $color-secondary;
+        border-bottom: 5px solid $color-primary;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+        
+    }
+   
+}
+

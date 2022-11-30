@@ -3,6 +3,8 @@
 .fonctionnement {
     padding: 1rem 1.5rem;
     counter-reset: tuto;
+    cursor: pointer;
+    transition: transform 200ms;
    
     & ol {
         display: flex;
@@ -37,6 +39,10 @@
         border-radius: 2rem;
         font-weight: bold;
         @include box-shadow;
+        &:hover {
+            opacity: 0.9;
+            box-shadow: 5px 10px 5px lightgrey;
+        }
     }
 
     & i {

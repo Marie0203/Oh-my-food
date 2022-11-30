@@ -26,11 +26,12 @@ button {
     .fas {
         position: absolute;
         color: transparent;
-        background-image: linear-gradient($color-secondary, $color-primary);
+        background-image: linear-gradient($color-primary, $color-secondary);
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
         transition: all 200ms ease-in-out;
+
     }
     &:hover .fas {
         opacity: 1;
