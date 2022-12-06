@@ -1,7 +1,7 @@
 @import "../utils/variables";
 
 .fonctionnement {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 2rem;
     counter-reset: tuto;
     cursor: pointer;
     transition: transform 200ms;
@@ -10,13 +10,15 @@
         display: flex;
         gap: 2rem;
         cursor: pointer;
-        @media screen and (max-width:1000px) {
+        margin-bottom: 2rem;
+        @media screen and (max-width:768px) {
             flex-direction: column;
             padding: 1rem 1.5rem;
         }
     }
     & li {
         position: relative;
+        display: flex;
         &::before {
             content: counter(tuto);
             counter-increment: tuto;
@@ -41,13 +43,17 @@
         @include box-shadow;
         &:hover {
             opacity: 0.9;
-            box-shadow: 5px 10px 5px lightgrey;
+            box-shadow: 1px 9px 7px 0 lightgrey;
+            background-color: #f5edff;
         }
     }
 
     & i {
         padding-right: 1rem;
         color: darkgrey;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        &:hover {
+            color: $color-primary;
+        }
     }
 }

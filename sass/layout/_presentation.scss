@@ -1,14 +1,15 @@
 @import "../utils/variables";
 .presentation {
     text-align: center;
-    padding: 3rem;
+    padding: 1rem 2rem 4rem;
     background-color: #f6f6f6;
+    margin-bottom: 1rem;
     & h2 {
         font-size: 1.8rem;
         font-weight: 600;
     }
     & p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 300;
     }
 }
