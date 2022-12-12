@@ -117,12 +117,6 @@ button:hover {
   cursor: pointer;
   transition: transform 200ms;
 }
-.fonctionnement .tuto {
-  background-color: #f5edff;
-}
-.fonctionnement .tuto i {
-  color: #9356dc;
-}
 .fonctionnement ol {
   display: flex;
   gap: 2rem;
@@ -164,6 +158,10 @@ button:hover {
 .fonctionnement li:hover {
   opacity: 0.9;
   box-shadow: 1px 9px 7px 0 lightgrey;
+  background-color: #f5edff;
+}
+.fonctionnement li:hover i {
+  color: #9356dc;
 }
 .fonctionnement i {
   padding-right: 1rem;
