@@ -117,6 +117,12 @@ button:hover {
   cursor: pointer;
   transition: transform 200ms;
 }
+.fonctionnement .tuto {
+  background-color: #f5edff;
+}
+.fonctionnement .tuto i {
+  color: #9356dc;
+}
 .fonctionnement ol {
   display: flex;
   gap: 2rem;
@@ -140,9 +146,6 @@ button:hover {
   font-weight: bold;
   box-shadow: 1px 5px 8px 0px #e3e3e3;
 }
-.fonctionnement li:hover {
-  background-color: #f5edff;
-}
 .fonctionnement li::before {
   content: counter(tuto);
   counter-increment: tuto;
@@ -161,15 +164,11 @@ button:hover {
 .fonctionnement li:hover {
   opacity: 0.9;
   box-shadow: 1px 9px 7px 0 lightgrey;
-  background-color: #f5edff;
 }
 .fonctionnement i {
   padding-right: 1rem;
   color: darkgrey;
   font-size: 1.3rem;
-}
-.fonctionnement i:hover {
-  color: #9356dc;
 }
 
 .restaurants {
