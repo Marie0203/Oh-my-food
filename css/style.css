@@ -140,6 +140,9 @@ button:hover {
   font-weight: bold;
   box-shadow: 1px 5px 8px 0px #e3e3e3;
 }
+.fonctionnement li:hover {
+  background-color: #f5edff;
+}
 .fonctionnement li::before {
   content: counter(tuto);
   counter-increment: tuto;
@@ -178,7 +181,8 @@ button:hover {
   padding: 1rem;
   flex-direction: column;
 }
-.restaurants .info_card h3, .restaurants .info_card p {
+.restaurants .info_card h3,
+.restaurants .info_card p {
   margin: 0.3rem 0rem;
   font-size: 1rem;
 }
@@ -301,7 +305,8 @@ button:hover {
 .menu_category {
   padding: 1rem 1rem;
 }
-.menu_category h3, .menu_category p {
+.menu_category h3,
+.menu_category p {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;

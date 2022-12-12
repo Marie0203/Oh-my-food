@@ -5,20 +5,26 @@
     counter-reset: tuto;
     cursor: pointer;
     transition: transform 200ms;
-   
+
     & ol {
         display: flex;
         gap: 2rem;
         cursor: pointer;
         margin-bottom: 2rem;
+
         @media screen and (max-width:768px) {
             flex-direction: column;
             padding: 1rem 1.5rem;
         }
     }
+
     & li {
         position: relative;
         display: flex;
+        &:hover {
+            background-color: #f5edff;
+        }
+
         &::before {
             content: counter(tuto);
             counter-increment: tuto;
@@ -34,6 +40,7 @@
             position: absolute;
             bottom: 1.5rem;
         }
+
         list-style-type: none;
         background-color: #f6f6f6;
         padding: 2rem;
@@ -41,6 +48,7 @@
         border-radius: 2rem;
         font-weight: bold;
         @include box-shadow;
+
         &:hover {
             opacity: 0.9;
             box-shadow: 1px 9px 7px 0 lightgrey;
@@ -52,6 +60,7 @@
         padding-right: 1rem;
         color: darkgrey;
         font-size: 1.3rem;
+
         &:hover {
             color: $color-primary;
         }
